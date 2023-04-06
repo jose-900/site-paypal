@@ -30,7 +30,7 @@
      <!--facilidades-->
      <section class="facilities" id="facilities">
       <h1>Site & E-commerce </h1>
-          <p>Site sem custo de hospedagem e sem custo de Domínio | Suporte para criação do ambiente </p>
+          <p>Site sem custo de hospedagem e sem custo de Domínio | Suporte para criação do ambiente | Garantia de Contrato  </p>
        <div class="row">
            <div class="facilities-col">
                <img src="site2.png">
@@ -39,30 +39,22 @@
           
        </div>
   </section>
-  
-  <section class="footer" id="fooder">
-    <div id="smart-button-container">
-        <div style="text-align: center;">
-          <div id="paypal-button-container"></div>
+   <!---footer-->
+   <section class="footer" id="fooder">
+    <div class="whats" id="whats">
+        <div id="smart-button-container">
+            <div style="text-align: center;">
+              <div id="paypal-button-container"></div>
+            </div>
         </div>
-
-
+            <h5>Pix</h5>
+            <img  src="qrcode.png"  width="100" height="100" >
+            <a href="https://wa.me/5511986244329" target="_blank" >
+            <h6 style="display: flex; justify-content: flex-end; align-items: flex-end;"></h6>
+            <img src="whats5.jpeg" width="60" alt="Fale conosco" title="Fale conosco" >
+            </a>
     </div>
- 
-    <div style="padding: 20px;  justify-content: center; align-items: center;" >
-        <h4 style="display: flex; justify-content: center; align-items: center; ">Pix</h4>
-        <img  src="qrcode.png"  width="100" height="100" >
-       
-    </div>
-    <div class="whats">
-      <a href="https://wa.me/5511986244329" target="_blank" >
-      <h6 style="display: flex; justify-content: center; align-items: center;"></h6>
-      <img src="whats5.jpeg" width="60" alt="Fale conosco" title="Fale conosco" >
-      </a>
-    </div>
-
-
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
     <script>
       function initPayPalButton() {
         paypal.Buttons({
@@ -70,13 +62,13 @@
             shape: 'pill',
             color: 'blue',
             layout: 'vertical',
-            label: 'buynow',
+            label: 'paypal',
             
           },
   
           createOrder: function(data, actions) {
             return actions.order.create({
-              purchase_units: [{"description":"Site sem custo dominio e hospedagem","amount":{"currency_code":"BRL","value":1000}}]
+              purchase_units: [{"description":"Site","amount":{"currency_code":"BRL","value":1000}}]
             });
           },
   
@@ -104,6 +96,8 @@
       initPayPalButton();
     </script>
 
+
+</div>  
          
 
      
