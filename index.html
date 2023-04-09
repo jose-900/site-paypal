@@ -25,7 +25,8 @@
     <!--campus-->
     <!--facilidades-->
     <section class="facilities" id="facilities">
-        <h1>Site & E-Commerce </h1>
+      
+      <h1>Site & E-Commerce </h1>
             <p>Sites e ecommerce sem custo de Domínio e Hospedagem excelente para venda de Produtos na internet | Garantia de contrato </p>
          <div class="row">
              <div class="facilities-col">
@@ -35,19 +36,19 @@
     </section>
     <!---footer-->
     <section class="footer" id="fooder">
-      <div class="whats" id="whats">
-          <div id="smart-button-container">
-              <div style="text-align: center;">
-                <div id="paypal-button-container"></div>
-              </div>
-          </div>
-              <h5>Pix</h5>
-              <img  src="qrcode.png"  width="100" height="100" >
-              <a href="https://wa.me/5511986244329" target="_blank" >
-              <h6 style="display: flex; justify-content: flex-end; align-items: flex-end;"></h6>
-              <img src="whats5.jpeg" width="60" alt="Fale conosco" title="Fale conosco" >
-              </a>
-      </div>
+      <div id="smart-button-container">
+        <div class="whats" id="whats">
+            <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+            </div>
+            <h5>Pix</h5>
+            <img  src="qrcode.png"  width="100" height="100" >
+            <a href="https://wa.me/5511986244329" target="_blank" >
+            <h6 style="display: flex; justify-content: flex-end; align-items: flex-end;"></h6>
+            <img src="whats5.jpeg" width="60" alt="Fale conosco" title="Fale conosco" >
+            </a>
+         </div>
+       </div>
         <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=BRL" data-sdk-integration-source="button-factory"></script>
         <script>
           function initPayPalButton() {
@@ -62,7 +63,7 @@
       
               createOrder: function(data, actions) {
                 return actions.order.create({
-                  purchase_units: [{"description":"e-book bitcoin","amount":{"currency_code":"BRL","value":1000}}]
+                  purchase_units: [{"description":"Site responsivo e e-commerce","amount":{"currency_code":"BRL","value":1000}}]
                 });
               },
       
@@ -89,6 +90,8 @@
           }
           initPayPalButton();
         </script>
+
+     
   </section>
 </body>
 </html> 
